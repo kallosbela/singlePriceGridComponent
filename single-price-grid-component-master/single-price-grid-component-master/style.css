@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --cyan: #2bb3b1; 
+  --brightYellow: hsl(71, 73%, 54%);
+  --lightGrey: hsl(204, 43%, 93%);
+  --grayishBlue: hsl(218, 22%, 67%);
+}
+
+* {
+  font-family: 'Karla';
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 640px;
+  height: 480px;
+  position: absolute;
+  box-shadow: 1px 3px 5px 1px var(--grayishBlue);
+  border-radius: 5px;
+}
+
+.flex-container {
+  padding: 40px;
+  display: inline-block;
+}
+
+#upper {
+  background-color: white;
+  width: 100%;
+  height: 45%;
+  border-radius: 6px 6px 0 0;
+}
+
+#upper h2 {
+  font-weight: 700;
+  color: var(--cyan);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#upper h4 {
+  font-weight: 700;
+  color: var(--brightYellow);
+  margin-bottom: 0.8rem;
+}
+
+#upper p {
+  
+  color: var(--grayishBlue);
+}
+
+#left {
+  background-color: var(--cyan);
+  color: white;
+  width: 50%;
+  height: 55%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 0 0 0 6px;
+}
+
+#left h4 {
+  margin-bottom: 1rem;
+}
+
+#left p {
+  margin-bottom: 0.5rem;
+}
+
+#firstP {
+  color: var(--grayishBlue)
+}
+
+#firstP span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+#left button {
+  width: 100%;
+  height: 3rem;
+  background-color: var(--brightYellow);
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: var(--cyan);
+  font-size: 1rem;
+}
+
+#left button:hover {
+
+  background-color: rgb(168, 168, 23);
+  color: white;
+ 
+  box-shadow: 1px 1px 3px 3px var(--lightGrey);
+
+}
+
+#right {
+  background-color: #4abebd;
+  color: white;
+  width: 50%;
+  height: 55%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 0 0 6px 0;
+}
+
+#right h4 {
+  margin-bottom: 1rem;
+}
+
+footer {
+  position: fixed;
+  height: 30px;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .main {
+    width: 375px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #upper {
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    border-radius: 6px 6px 0 0;  
+  }
+  
+  #upper p {
+    line-height: 1.5rem;
+    margin: 0 0 1rem 0;
+  }
+  
+  #left {
+    width: 100%;
+    position: static;
+  }
+  
+  
+  #right {
+    width: 100%;
+    position: static;
+    inset: auto;
+  }
+  
+  #right p {
+    line-height: 1.5rem;
+    width: 70%;
+    color:hsl(219, 34%, 87%);
+  }
+
+  footer {
+    display: none;
+  }
+
+}
+
