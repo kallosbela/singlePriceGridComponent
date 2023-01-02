@@ -10,11 +10,6 @@ This is a solution to the [Single price grid component challenge on Frontend Men
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -27,9 +22,9 @@ Users should be able to:
 
 ### Screenshot
 
-![][.\screenshot.JPG]
+[./screenshot.JPG](./screenshot.JPG)
 
-![][.\screenshotMobile.JPG]
+[./screenshotMobile.JPG](./screenshotMobile.JPG)
 
 ### Links
 
